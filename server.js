@@ -3,7 +3,7 @@ const { Server } = require("socket.io");
 const port = process.env.PORT || 3000;
 const httpServer = createServer();
 const io = new Server(httpServer, {
-  cors: "http://localhost:5174/",
+  cors: "https://frtic.vercel.app/",
 });
 
 const allUsers = {};
